@@ -1,0 +1,13 @@
+C:\Users\Jayvee Hermoso\source\repos\Project\RestaurantSystem\RestaurantSystem\bin\Debug\RestaurantSystem.exe.config
+C:\Users\Jayvee Hermoso\source\repos\Project\RestaurantSystem\RestaurantSystem\bin\Debug\RestaurantSystem.exe
+C:\Users\Jayvee Hermoso\source\repos\Project\RestaurantSystem\RestaurantSystem\bin\Debug\RestaurantSystem.pdb
+C:\Users\Jayvee Hermoso\source\repos\Project\RestaurantSystem\RestaurantSystem\obj\Debug\RestaurantSystem.csproj.AssemblyReference.cache
+C:\Users\Jayvee Hermoso\source\repos\Project\RestaurantSystem\RestaurantSystem\obj\Debug\RestaurantSystem.Properties.Resources.resources
+C:\Users\Jayvee Hermoso\source\repos\Project\RestaurantSystem\RestaurantSystem\obj\Debug\RestaurantSystem.csproj.GenerateResource.cache
+C:\Users\Jayvee Hermoso\source\repos\Project\RestaurantSystem\RestaurantSystem\obj\Debug\RestaurantSystem.csproj.CoreCompileInputs.cache
+C:\Users\Jayvee Hermoso\source\repos\Project\RestaurantSystem\RestaurantSystem\obj\Debug\RestaurantSystem.exe
+C:\Users\Jayvee Hermoso\source\repos\Project\RestaurantSystem\RestaurantSystem\obj\Debug\RestaurantSystem.pdb
+C:\Users\Jayvee Hermoso\source\repos\Project\RestaurantSystem\RestaurantSystem\obj\Debug\RestaurantSystem.UI.MainForm.resources
+C:\Users\Jayvee Hermoso\source\repos\Project\RestaurantSystem\RestaurantSystem\obj\Debug\RestaurantSystem.UI.MenuItemControl.resources
+C:\Users\Jayvee Hermoso\source\repos\Project\RestaurantSystem\RestaurantSystem\obj\Debug\RestaurantSystem.UI.CategoryButtonControl.resources
+C:\Users\Jayvee Hermoso\source\repos\Project\RestaurantSystem\RestaurantSystem\obj\Debug\RestaurantSystem.UI.MenuDetailsForm.resources
