@@ -19,6 +19,7 @@ namespace RestaurantSystem.UI
         private void MainForm_Load(object sender, EventArgs e)
         {
             _menuButtonHandler.LoadMenuItems();
+            
         }
         
         private void btnAll_Click(object sender, EventArgs e)

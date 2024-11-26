@@ -1,39 +1,29 @@
-﻿using System;
-using RestaurantSystem.Data;
-using System.Windows.Forms;
+﻿using RestaurantSystem.Data;
 using RestaurantSystem.UI;
-
+using MenuItem = RestaurantSystem.Models.MenuItem;
 
 
 namespace RestaurantSystem.Handler
 {
     internal class DetailsFormHandler
     {
-        private readonly DatabaseHandler _menuItemRepository;
-        private readonly Form _detailForm;
+        private readonly DatabaseHandler _menuDetailsRepository;
+        private readonly MenuDetailsForm _menuDetailsForm;
 
-        public DetailsFormHandler(DatabaseHandler menuItemRepository, Form detailForm)
+        public DetailsFormHandler(MenuDetailsForm menuDetailsForm, DatabaseHandler databaseHandler)
         {
-            _menuItemRepository = menuItemRepository;
-            _detailForm = detailForm;
+            _menuDetailsForm = menuDetailsForm;
+            _menuDetailsRepository = databaseHandler;
         }
 
-        public void LoadMenuDetails(int itemID)
+        public void LoadMenuDetails(MenuItem item)
         {
-            var menuItems = _menuItemRepository.GetMenuItemById(itemID);
+            // Populate the details form with item data
+            _menuDetailsForm.ItemNameDetails = item.Name;
+            _menuDetailsForm.ItemDescriptionDetails = item.LongDescription;
+            _menuDetailsForm.ItemPriceDetails = item.Price;
+            //_menuDetailsForm.ItemImage = ImageHelper.ByteArrayToImage(item.Image);
 
-            foreach (var item in menuItems)
-            {
-                var menuDetailsForm = new MenuDetailsForm
-                {
-                    ItemNameDetails = item.Name,
-                    ItemDescriptionDetails = item.LongDescription,
-                    ItemPriceDetails = item.Price,
-                };
-            }
-            
-            // Make the details panel visible
-            _detailForm.Visible = true;
         }
-}
+    }
 }

@@ -46,6 +46,7 @@
             this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox.TabIndex = 0;
             this.pictureBox.TabStop = false;
+            this.pictureBox.Click += new System.EventHandler(this.pictureBox_Click);
             // 
             // lblItemName
             // 
@@ -56,6 +57,7 @@
             this.lblItemName.TabIndex = 1;
             this.lblItemName.Text = "label1";
             this.lblItemName.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblItemName.Click += new System.EventHandler(this.lblItemName_Click);
             // 
             // lblDescription
             // 
@@ -65,6 +67,7 @@
             this.lblDescription.TabIndex = 2;
             this.lblDescription.Text = "label1";
             this.lblDescription.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblDescription.Click += new System.EventHandler(this.lblDescription_Click);
             // 
             // lblPrice
             // 
@@ -75,6 +78,7 @@
             this.lblPrice.Size = new System.Drawing.Size(59, 20);
             this.lblPrice.TabIndex = 3;
             this.lblPrice.Text = "label2";
+            this.lblPrice.Click += new System.EventHandler(this.lblPrice_Click);
             // 
             // MenuItemControl
             // 
@@ -89,7 +93,6 @@
             this.Margin = new System.Windows.Forms.Padding(29, 30, 11, 10);
             this.Name = "MenuItemControl";
             this.Size = new System.Drawing.Size(268, 268);
-            this.Click += new System.EventHandler(this.MenuItemControl_Click);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

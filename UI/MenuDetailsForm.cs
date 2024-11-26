@@ -1,4 +1,6 @@
-﻿using System;
+﻿using RestaurantSystem.Data;
+using RestaurantSystem.Handler;
+using System;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 
@@ -6,11 +8,11 @@ namespace RestaurantSystem.UI
 {
     public partial class MenuDetailsForm : Form
     {
+        
         public MenuDetailsForm()
         {
             InitializeComponent();
-            
-        }
+        } 
 
         public string ItemNameDetails
         {
@@ -36,7 +38,8 @@ namespace RestaurantSystem.UI
         }
         private void btnBack_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
+
     }
 }

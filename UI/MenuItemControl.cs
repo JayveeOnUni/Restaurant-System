@@ -1,21 +1,12 @@
-﻿using RestaurantSystem.Data;
-using RestaurantSystem.Handler;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using System;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace RestaurantSystem.UI
 {
     public partial class MenuItemControl : UserControl
     {
-        private Form detailForm;
-
+        
         public MenuItemControl()
         {
             InitializeComponent();
@@ -45,14 +36,24 @@ namespace RestaurantSystem.UI
             set => pictureBox.Image = value;
         }
 
-        private void MenuItemControl_Click(object sender, EventArgs e)
+        private void lblPrice_Click(object sender, EventArgs e)
         {
-            Panel clickedPanel = sender as Panel;
-            int itemID = (int)clickedPanel.Tag; // Assuming Tag contains the itemID
+            this.OnClick(e);
+        }
 
-            // Pass the existing details panel to DetailsFormHandler
-            var detailsHandler = new DetailsFormHandler(new DatabaseHandler(), detailForm);
-            detailsHandler.LoadMenuDetails(itemID);
+        private void lblDescription_Click(object sender, EventArgs e)
+        {
+            this.OnClick(e);
+        }
+
+        private void lblItemName_Click(object sender, EventArgs e)
+        {
+            this.OnClick(e);
+        }
+
+        private void pictureBox_Click(object sender, EventArgs e)
+        {
+            this.OnClick(e);
         }
     }
 }

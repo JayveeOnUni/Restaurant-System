@@ -2,10 +2,7 @@
 using RestaurantSystem.UI;
 using RestaurantSystem.Utilities;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace RestaurantSystem.Handler
@@ -51,8 +48,22 @@ namespace RestaurantSystem.Handler
                     ItemImage = ImageHelper.ByteArrayToImage(item.Image)
                 };
 
+                // Attach click event
+                menuItemControl.Click += (sender, args) =>
+                {
+                    var menuDetailsForm = new MenuDetailsForm();
+                    var detailsFormHandler = new DetailsFormHandler(menuDetailsForm, _menuItemRepository);
+                    detailsFormHandler.LoadMenuDetails(item);
+
+                    menuDetailsForm.ShowDialog();
+                };
+
                 _menuPanel.Controls.Add(menuItemControl);
             }
+
+
         }
+
     }
+
 }
